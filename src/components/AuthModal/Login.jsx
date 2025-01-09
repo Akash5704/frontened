@@ -9,7 +9,7 @@ export default function Login() {
   const navigate = useNavigate();
   const handleSubmit = (e) =>{
       e.preventDefault()
-      axios.post('https://backened-n70z.onrender.com/login',{email,password})
+      axios.post('https://stockup-backened.onrender.com/login',{email,password})
       .then(result => 
           {console.log(result)
               if(result.data === "Success"){
